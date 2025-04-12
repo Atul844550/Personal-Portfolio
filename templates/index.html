@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+<nav>
+  <div class="left">
+    <h1>Atul Soni</h1>
+  </div>
+
+  <div class="right">
+    <a href="https://github.com/Atul844550" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-github"></i>
+      <span>Github</span>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/atul-soni-b18aa0228/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span>Linkedin</span>
+    </a>
+    
+    <a href="mailto:atulsoni844550@gmail.com" target="_blank" >
+      <i class="fa-solid fa-envelope"></i>
+      <span>Email</span>
+    </a>
+  </div>
+</nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section id= "about" class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Atul Soni 👋</h2>
+        <p>I am passionate in Artificial Intelligence and Machine Learning Enthusiast with a strong foundation in Android App Development. 
+          With hands-on experience in building AI models, and mobile apps, I specialize in developing scalable, 
+          efficient, and user-friendly solutions. My expertise spans Java, Python, Kotlin, Machine Learning, and Spring Boot, 
+          allowing me to work on diverse projects ranging from desktop applications to AI-driven predictions.</p>
+        <div class="links">
+
+          <a href="#education">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+          </a>
+
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+
+          <a href="#projects">
+            <i class="fa-solid fa-music"></i>
+            <span>Project</span>
+          </a>
+          
+          <a href="#certifications">
+            <i class="fa-solid fa-pen"></i>
+            <span>certifications</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+
+          
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="{{ url_for('static', filename='images/WhatsApp Image 2024-07-27 at 12.30.20 PM.jpeg') }}" alt="Atul Soni">
+
+      </div>
+    </section>
+
+    <!-- SECTION: Resume -->
+<section id="resume" class="resume-section">
+  <h2>My Resume</h2>
+  <p>Download my latest resume to learn more about my skills, experience, and projects.</p>
+  <a href="{{ url_for('static', filename='resume.pdf') }}" download="resume.pdf" class="download-btn">
+
+    <i class="fa-solid fa-download"></i> Download Resume
+  </a>
+</section>
+
+
+    <!-- SECTION 2: Education -->
+    <section id="education" class="education-section">
+      <h2>Education</h2>
+
+      <div class="education-container">
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>Lovely Professional University</h3>
+          <p><strong>Degree:</strong> B.Tech in Computer Science and Engineering</p>
+          <p><strong>Specialization:</strong> Artificial Intelligence & Machine Learning</p>
+          <p><strong>Minor:</strong> Android App Development</p>
+          <p><strong>Duration:</strong> 2021 – Present</p>
+          <p><strong>CGPA:</strong> 7.73</p>
+        </div>
+
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <h3>Swami Educational Public School</h3>
+          <p><strong>Degree:</strong> 12th (Science)</p>
+          <p><strong>Duration:</strong> 2020 – 2021</p>
+          <p><strong>Percentage:</strong> 70%</p>
+        </div>
+
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <h3>St. Joseph’s Sr. Sec. School</h3>
+          <p><strong>Degree:</strong> 10th (Science)</p>
+          <p><strong>Duration:</strong> 2018 – 2019</p>
+          <p><strong>Percentage:</strong> 80%</p>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+</body>
+</html>
+
+
+
+
+    <!-- SECTION 3: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        
+      </div>
+
+      <div class="cells ">
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/C_Logo.png') }}" alt="logo">
+          <span>C Programming</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/ISO_C++_Logo.svg.png') }}" alt="logo">
+          <span>C++ Programming</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/java.jpg') }}" alt="logo">
+          <span>Java Programming</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/xml.png') }}" alt="logo">
+          <span> XML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/kotlin.jpg') }}" alt="logo">
+          <span>Kotlin </span>
+        </div>
+      </div>
+
+      <div class="cells ">
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/python.jpg') }}" alt="logo">
+          <span>Python Programming</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/flask.png') }}" alt="logo">
+          <span>Flask</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/android.png') }}" alt="logo">
+          <span>Android App Development</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/machine_leanring.png') }}" alt="logo">
+          <span> Machine learning</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/github.jpg') }}" alt="logo">
+          <span> Git and Github</span>
+        </div>
+      </div>
+
+      <div class="cells ">
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/postman.jpg') }}" alt="logo">
+          <span>PostMan</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/firebase.png') }}" alt="logo">
+          <span>FireBase</span>
+        </div>
+        
+        <div class="cell">
+          <img src="{{ url_for('static', filename= 'images/mysql.png') }}" alt="logo">
+          <span>MYSQL DataBase</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!--certification section-->
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="certifications-container">
+          <div class="certification">
+            <img src="{{ url_for('static', filename= 'images/machine learning certificate.png') }}" alt="Machine Learning Certificate">
+              <h3>Machine Learning</h3>
+              <p>Issued by Coursera - 2024</p>
+          </div>
+          <div class="certification">
+            <img src="{{ url_for('static', filename= 'images/android certificate.png') }}" alt="Android App Development Certificate">
+              <h3>Android App Development</h3>
+              <p>Issued by Coursera - 2023</p>
+          </div>
+          <div class="certification">
+            <img src="{{ url_for('static', filename= 'images/java certificate.png') }}" alt="Full Stack Java Certificate">
+              <h3>Full Stack Java Development</h3>
+              <p>Issued by Cipher School - 2024</p>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- SECTION 4: Projects -->
+<section id="projects" class="projects-section">
+  <h2>Projects</h2>
+  
+  <div class="projects-container">
+    <div class="project">
+      <img src="{{ url_for('static', filename= 'images/music.png') }}" alt="Music Player App" class="project-image">
+      <div class="details">
+        <h3>Music Player Desktop Application</h3>
+        <p>Developed a feature-rich music player using Java Swing and AWT, featuring a dynamic splash screen, secure user authentication (MySQL), 
+          and high-quality MP3 playback using the JLayer library. Implemented play, pause, stop, volume control, 
+          and playlist management with a user-friendly interface. Utilized multi-threading for smooth performance and real-time audio control.</p>
+      </div>
+    </div>
+    
+    <div class="project">
+      <img src="{{ url_for('static',  filename= 'images/quiz.png') }}" alt="Quiz App" class="project-image">
+      <div class="details">
+        <h3>Online Quiz Application (Android)</h3>
+        <p>Developed an interactive quiz app using Kotlin and XML, featuring Firebase Authentication for secure login and Retrofit for 
+          fetching quiz data from an API. Implemented RecyclerView for displaying dynamic questions and options, 
+          ensuring a smooth user experience. Managed quiz states, score tracking, and real-time updates for enhanced engagement.</p>
+      </div>
+    </div>
+  
+    <div class="project">
+      <img src="{{ url_for('static', filename= 'images/gold.jpg') }}" alt="Gold Price Prediction" class="project-image">
+      <div class="details">
+        <h3>Gold Price Prediction (Machine Learning)</h3>
+        <p>Built a gold price prediction model using Linear Regression to analyze historical price trends and economic factors like inflation rates 
+          and interest rates. Collected and preprocessed data, performed feature engineering, and trained the model for accurate predictions.
+           Evaluated performance using MAE, MSE, and R-squared metrics, ensuring reliability. The project showcases expertise in data analysis,
+            machine learning, and predictive modeling.</p>
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+
+
+
+
+    
+    
+
+    <!-- SECTION 6: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          Let's connect and create something amazing together! Whether you have an idea, a project, or just want to collaborate, 
+          I'm always open to new opportunities. Feel free to reach out, and let's turn possibilities into reality.
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Puranpur, District Pilibhit, Uttar Pradesh, 262122, India</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:atulsoni844550@gmail.com">atulsoni844550@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+918445501402">+91 8445501402</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form method="POST" action="/submit_contact">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        
+          <button type="submit">Send Message</button>
+        </form>
+        
+      </div>
+    </section>
+  </main>
+
+  
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-about">
+      <h3>About Me</h3>
+      <p>Passionate Machine Learning and AI Enthusiast, building scalable applications and innovative solutions.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Me</h3>
+      <a href="https://github.com/Atul844550" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/atul-soni-b18aa0228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:atulsoni844550@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Atul Soni. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+
+  <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+
+
+</body>
+</html>
