@@ -18,9 +18,6 @@ def home():
     return render_template('index.html')
 
 # Contact Form Handler
-from flask import Flask, request, redirect, render_template
-
-
 
 @app.route('/submit_contact', methods=['POST'])
 def submit_contact():
@@ -29,7 +26,6 @@ def submit_contact():
     message = request.form['message']
 
     try:
-       
         cursor = db.cursor()
         cursor.execute("INSERT INTO users (name, email, message) VALUES (%s, %s, %s)", (name, email, message))
         db.commit()
