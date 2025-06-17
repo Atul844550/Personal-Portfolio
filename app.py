@@ -1,16 +1,24 @@
 from flask import Flask, request, redirect, render_template
 import mysql.connector
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
 # MySQL Connection
+
+
+load_dotenv()
+
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="8445501402",  
-    database="personal_portfolio"
+    host=os.getenv("DB_HOST"),
+    port=os.getenv("DB_PORT"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME")
 )
 cursor = db.cursor()
+
 
 # Home Route
 @app.route('/home')
